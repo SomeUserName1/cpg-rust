@@ -1,0 +1,660 @@
+{
+  "edges": [
+    {
+      "id": 1,
+      "src": 1,
+      "dst": 2,
+      "kind": {
+        "overlay": "Ast",
+        "order": 0,
+        "field": null
+      }
+    },
+    {
+      "id": 3,
+      "src": 2,
+      "dst": 3,
+      "kind": {
+        "overlay": "Ast",
+        "order": 0,
+        "field": "name"
+      }
+    },
+    {
+      "id": 5,
+      "src": 2,
+      "dst": 4,
+      "kind": {
+        "overlay": "Ast",
+        "order": 1,
+        "field": "parameters"
+      }
+    },
+    {
+      "id": 7,
+      "src": 4,
+      "dst": 5,
+      "kind": {
+        "overlay": "Ast",
+        "order": 0,
+        "field": null
+      }
+    },
+    {
+      "id": 9,
+      "src": 5,
+      "dst": 6,
+      "kind": {
+        "overlay": "Ast",
+        "order": 0,
+        "field": "pattern"
+      }
+    },
+    {
+      "id": 11,
+      "src": 5,
+      "dst": 7,
+      "kind": {
+        "overlay": "Ast",
+        "order": 1,
+        "field": "type"
+      }
+    },
+    {
+      "id": 13,
+      "src": 2,
+      "dst": 8,
+      "kind": {
+        "overlay": "Ast",
+        "order": 2,
+        "field": "return_type"
+      }
+    },
+    {
+      "id": 15,
+      "src": 2,
+      "dst": 9,
+      "kind": {
+        "overlay": "Ast",
+        "order": 3,
+        "field": "body"
+      }
+    },
+    {
+      "id": 17,
+      "src": 9,
+      "dst": 10,
+      "kind": {
+        "overlay": "Ast",
+        "order": 0,
+        "field": null
+      }
+    },
+    {
+      "id": 19,
+      "src": 10,
+      "dst": 11,
+      "kind": {
+        "overlay": "Ast",
+        "order": 0,
+        "field": null
+      }
+    },
+    {
+      "id": 21,
+      "src": 11,
+      "dst": 12,
+      "kind": {
+        "overlay": "Ast",
+        "order": 0,
+        "field": "condition"
+      }
+    },
+    {
+      "id": 23,
+      "src": 12,
+      "dst": 13,
+      "kind": {
+        "overlay": "Ast",
+        "order": 0,
+        "field": "left"
+      }
+    },
+    {
+      "id": 25,
+      "src": 12,
+      "dst": 14,
+      "kind": {
+        "overlay": "Ast",
+        "order": 1,
+        "field": "right"
+      }
+    },
+    {
+      "id": 27,
+      "src": 11,
+      "dst": 15,
+      "kind": {
+        "overlay": "Ast",
+        "order": 1,
+        "field": "consequence"
+      }
+    },
+    {
+      "id": 29,
+      "src": 15,
+      "dst": 16,
+      "kind": {
+        "overlay": "Ast",
+        "order": 0,
+        "field": null
+      }
+    },
+    {
+      "id": 31,
+      "src": 16,
+      "dst": 17,
+      "kind": {
+        "overlay": "Ast",
+        "order": 0,
+        "field": null
+      }
+    },
+    {
+      "id": 33,
+      "src": 17,
+      "dst": 18,
+      "kind": {
+        "overlay": "Ast",
+        "order": 0,
+        "field": "macro"
+      }
+    },
+    {
+      "id": 35,
+      "src": 17,
+      "dst": 19,
+      "kind": {
+        "overlay": "Ast",
+        "order": 1,
+        "field": null
+      }
+    },
+    {
+      "id": 37,
+      "src": 19,
+      "dst": 20,
+      "kind": {
+        "overlay": "Ast",
+        "order": 0,
+        "field": null
+      }
+    },
+    {
+      "id": 39,
+      "src": 20,
+      "dst": 21,
+      "kind": {
+        "overlay": "Ast",
+        "order": 0,
+        "field": null
+      }
+    },
+    {
+      "id": 41,
+      "src": 9,
+      "dst": 22,
+      "kind": {
+        "overlay": "Ast",
+        "order": 1,
+        "field": null
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": 1,
+      "common": {
+        "span": {
+          "file": "lib.rs",
+          "start_byte": 0,
+          "end_byte": 76,
+          "start_line": 1,
+          "start_col": 0
+        },
+        "code": "fn f(x: u64) -> u64 {\n    if x == 0 {\n        panic!(\"zero\");\n    }\n    x\n}\n",
+        "order": 0
+      },
+      "kind": {
+        "kind": "File",
+        "data": {
+          "path": "lib.rs",
+          "content_hash": "fe9dc54b2af5716e"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "common": {
+        "span": {
+          "file": "lib.rs",
+          "start_byte": 0,
+          "end_byte": 75,
+          "start_line": 1,
+          "start_col": 0
+        },
+        "code": "fn f(x: u64) -> u64 {\n    if x == 0 {\n        panic!(\"zero\");\n    }\n    x\n}",
+        "order": 0
+      },
+      "kind": {
+        "kind": "Function",
+        "data": {
+          "name": "f",
+          "signature": "(x: u64)"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "common": {
+        "span": {
+          "file": "lib.rs",
+          "start_byte": 3,
+          "end_byte": 4,
+          "start_line": 1,
+          "start_col": 3
+        },
+        "code": "f",
+        "order": 0
+      },
+      "kind": {
+        "kind": "Identifier",
+        "data": {
+          "name": "f"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "common": {
+        "span": {
+          "file": "lib.rs",
+          "start_byte": 4,
+          "end_byte": 12,
+          "start_line": 1,
+          "start_col": 4
+        },
+        "code": "(x: u64)",
+        "order": 1
+      },
+      "kind": {
+        "kind": "Expression",
+        "data": {
+          "expr_kind": "raw:parameters",
+          "type_name": null
+        }
+      }
+    },
+    {
+      "id": 5,
+      "common": {
+        "span": {
+          "file": "lib.rs",
+          "start_byte": 5,
+          "end_byte": 11,
+          "start_line": 1,
+          "start_col": 5
+        },
+        "code": "x: u64",
+        "order": 0
+      },
+      "kind": {
+        "kind": "Declaration",
+        "data": {
+          "name": "x",
+          "is_parameter": true
+        }
+      }
+    },
+    {
+      "id": 6,
+      "common": {
+        "span": {
+          "file": "lib.rs",
+          "start_byte": 5,
+          "end_byte": 6,
+          "start_line": 1,
+          "start_col": 5
+        },
+        "code": "x",
+        "order": 0
+      },
+      "kind": {
+        "kind": "Declaration",
+        "data": {
+          "name": "x",
+          "is_parameter": false
+        }
+      }
+    },
+    {
+      "id": 7,
+      "common": {
+        "span": {
+          "file": "lib.rs",
+          "start_byte": 8,
+          "end_byte": 11,
+          "start_line": 1,
+          "start_col": 8
+        },
+        "code": "u64",
+        "order": 1
+      },
+      "kind": {
+        "kind": "Type",
+        "data": {
+          "name": "u64"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "common": {
+        "span": {
+          "file": "lib.rs",
+          "start_byte": 16,
+          "end_byte": 19,
+          "start_line": 1,
+          "start_col": 16
+        },
+        "code": "u64",
+        "order": 2
+      },
+      "kind": {
+        "kind": "Type",
+        "data": {
+          "name": "u64"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "common": {
+        "span": {
+          "file": "lib.rs",
+          "start_byte": 20,
+          "end_byte": 75,
+          "start_line": 1,
+          "start_col": 20
+        },
+        "code": "{\n    if x == 0 {\n        panic!(\"zero\");\n    }\n    x\n}",
+        "order": 3
+      },
+      "kind": {
+        "kind": "Block"
+      }
+    },
+    {
+      "id": 10,
+      "common": {
+        "span": {
+          "file": "lib.rs",
+          "start_byte": 26,
+          "end_byte": 67,
+          "start_line": 2,
+          "start_col": 4
+        },
+        "code": "if x == 0 {\n        panic!(\"zero\");\n    }",
+        "order": 0
+      },
+      "kind": {
+        "kind": "Statement",
+        "data": {
+          "stmt_kind": "expr"
+        }
+      }
+    },
+    {
+      "id": 11,
+      "common": {
+        "span": {
+          "file": "lib.rs",
+          "start_byte": 26,
+          "end_byte": 67,
+          "start_line": 2,
+          "start_col": 4
+        },
+        "code": "if x == 0 {\n        panic!(\"zero\");\n    }",
+        "order": 0
+      },
+      "kind": {
+        "kind": "Statement",
+        "data": {
+          "stmt_kind": "if"
+        }
+      }
+    },
+    {
+      "id": 12,
+      "common": {
+        "span": {
+          "file": "lib.rs",
+          "start_byte": 29,
+          "end_byte": 35,
+          "start_line": 2,
+          "start_col": 7
+        },
+        "code": "x == 0",
+        "order": 0
+      },
+      "kind": {
+        "kind": "Expression",
+        "data": {
+          "expr_kind": "binary",
+          "type_name": null
+        }
+      }
+    },
+    {
+      "id": 13,
+      "common": {
+        "span": {
+          "file": "lib.rs",
+          "start_byte": 29,
+          "end_byte": 30,
+          "start_line": 2,
+          "start_col": 7
+        },
+        "code": "x",
+        "order": 0
+      },
+      "kind": {
+        "kind": "Identifier",
+        "data": {
+          "name": "x"
+        }
+      }
+    },
+    {
+      "id": 14,
+      "common": {
+        "span": {
+          "file": "lib.rs",
+          "start_byte": 34,
+          "end_byte": 35,
+          "start_line": 2,
+          "start_col": 12
+        },
+        "code": "0",
+        "order": 1
+      },
+      "kind": {
+        "kind": "Literal",
+        "data": {
+          "value": "0",
+          "literal_kind": "integer"
+        }
+      }
+    },
+    {
+      "id": 15,
+      "common": {
+        "span": {
+          "file": "lib.rs",
+          "start_byte": 36,
+          "end_byte": 67,
+          "start_line": 2,
+          "start_col": 14
+        },
+        "code": "{\n        panic!(\"zero\");\n    }",
+        "order": 1
+      },
+      "kind": {
+        "kind": "Block"
+      }
+    },
+    {
+      "id": 16,
+      "common": {
+        "span": {
+          "file": "lib.rs",
+          "start_byte": 46,
+          "end_byte": 61,
+          "start_line": 3,
+          "start_col": 8
+        },
+        "code": "panic!(\"zero\");",
+        "order": 0
+      },
+      "kind": {
+        "kind": "Statement",
+        "data": {
+          "stmt_kind": "expr"
+        }
+      }
+    },
+    {
+      "id": 17,
+      "common": {
+        "span": {
+          "file": "lib.rs",
+          "start_byte": 46,
+          "end_byte": 60,
+          "start_line": 3,
+          "start_col": 8
+        },
+        "code": "panic!(\"zero\")",
+        "order": 0
+      },
+      "kind": {
+        "kind": "MacroInvocation",
+        "data": {
+          "name": "panic"
+        }
+      }
+    },
+    {
+      "id": 18,
+      "common": {
+        "span": {
+          "file": "lib.rs",
+          "start_byte": 46,
+          "end_byte": 51,
+          "start_line": 3,
+          "start_col": 8
+        },
+        "code": "panic",
+        "order": 0
+      },
+      "kind": {
+        "kind": "Identifier",
+        "data": {
+          "name": "panic"
+        }
+      }
+    },
+    {
+      "id": 19,
+      "common": {
+        "span": {
+          "file": "lib.rs",
+          "start_byte": 52,
+          "end_byte": 60,
+          "start_line": 3,
+          "start_col": 14
+        },
+        "code": "(\"zero\")",
+        "order": 1
+      },
+      "kind": {
+        "kind": "Expression",
+        "data": {
+          "expr_kind": "raw:token_tree",
+          "type_name": null
+        }
+      }
+    },
+    {
+      "id": 20,
+      "common": {
+        "span": {
+          "file": "lib.rs",
+          "start_byte": 53,
+          "end_byte": 59,
+          "start_line": 3,
+          "start_col": 15
+        },
+        "code": "\"zero\"",
+        "order": 0
+      },
+      "kind": {
+        "kind": "Literal",
+        "data": {
+          "value": "\"zero\"",
+          "literal_kind": "string"
+        }
+      }
+    },
+    {
+      "id": 21,
+      "common": {
+        "span": {
+          "file": "lib.rs",
+          "start_byte": 54,
+          "end_byte": 58,
+          "start_line": 3,
+          "start_col": 16
+        },
+        "code": "zero",
+        "order": 0
+      },
+      "kind": {
+        "kind": "Expression",
+        "data": {
+          "expr_kind": "raw:string_content",
+          "type_name": null
+        }
+      }
+    },
+    {
+      "id": 22,
+      "common": {
+        "span": {
+          "file": "lib.rs",
+          "start_byte": 72,
+          "end_byte": 73,
+          "start_line": 5,
+          "start_col": 4
+        },
+        "code": "x",
+        "order": 1
+      },
+      "kind": {
+        "kind": "Identifier",
+        "data": {
+          "name": "x"
+        }
+      }
+    }
+  ]
+}
