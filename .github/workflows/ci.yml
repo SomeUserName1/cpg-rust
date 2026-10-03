@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Build
+        run: cargo build --release
+      - name: Run tests
+        run: cargo test
+      - name: E2E on sample crate
+        run: |
+          ./target/release/cpg-ast build sample-crate -o /tmp/cpg.json
+          ./target/release/cpg-ast inspect /tmp/cpg.json main --format dot
